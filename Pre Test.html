@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+</head>
+<body bgcolor="#023E7D">
+<div>
+	<div id="nav-placeholder" style="background-color:#e6f5ff;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+		<img src="Vlab.png"> <br>
+		<div style="font-size:20px; text-align:center;padding-top: 5px">
+		<b>BJT characteristics</b></div>
+    <div style="font-size:14px; background-color:lightblue; width: 100%; height:18px;">
+    <a style="text-decoration: none;color: #095586;" href='index.html'>&nbsp; Home </a>
+    <a style="text-decoration: none; color: #095586;" href='Experiment-List.html'>&nbsp; > Experiments </a>
+    <a style="text-decoration: none; color:#095586;" href='Broad Goal.html'>&nbsp; > BJT characteristics</a>
+    <a style="text-decoration: none;" href='#'>&nbsp; > Pre Test </a></div>
+  	  	<ul>
+  	  <li ><a  href="Broad Goal.html">Broad Goal</a></li>
+	  <li ><a  href="LO.html">Learning Objectives</a></li>
+	  <li><a href="Theory.html">Theory</a></li>
+	  <li><a href="Pre Test.html">Pre Test</a></li>
+	  <li><a href="Procedure.html">Procedure</a></li>
+	  <li><a href="Simulator.html">Simulator</a> </li>
+	  <li><a href="Post Test.html">Post Test</a></li>
+	  <li><a href="References.html">References</a></li>
+	  
+	</ul>
+  
+  		<div id="whole_body" style=" background-color:#e6f5ff;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom: 20px">
+	  	<div style="font-size:25px; text-align:center;padding-top: 5px">
+    		 <b> Answer the following questions after using reading the theory</b>
+    	</div>
+  	
+	<div id="whole_body" style=" background-color:#e6f5ff;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom: 20px">
+	  	<div style="font-size:20px; text-align:justify;padding-top: 5px">
+		
+	<p>
+
+<div style='transform: scale(0.65); position: relative; top: -80px;'>
+  <h3> Q1> When transistors are used in digital circuits they usually operate in the:</h3>
+  <p>Choose 1 answer</p>
+  <hr />
+
+  <div id='block-11' style='padding: 10px;'>
+    <label for='option-11' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option1' value='6/24' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      active region</label>
+    <span id='result-11'></span>
+  </div>
+  <hr />
+
+  <div id='block-12' style='padding: 10px;'>
+    <label for='option-12' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option1' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+     breakdown region</label>
+    <span id='result-12'></span>
+  </div>
+  <hr />
+
+  <div id='block-13' style='padding: 10px;'>
+    <label for='option-13' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option1' value='1/3' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      saturation and cutoff regions</label>
+    <span id='result-13'></span>
+  </div>
+  <hr />
+  <div id='block-14' style='padding: 10px;'>
+    <label for='option-14' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option1' value='1/6' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      linear region</label>
+    <span id='result-14'></span>
+  </div>
+  <hr />
+</div>
+
+<a id='showanswer1'></a>
+<script>
+  //    The function evaluates the answer and displays result
+  function displayAnswer1() {
+    if (document.getElementById('option-11').checked) {
+      document.getElementById('block-11').style.border = '3px solid red'
+      document.getElementById('result-11').style.color = 'red'
+      document.getElementById('result-11').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-12').checked) {
+      document.getElementById('block-12').style.border = '3px solid red'
+      document.getElementById('result-12').style.color = 'red'
+      document.getElementById('result-12').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-13').checked) {
+      document.getElementById('block-13').style.border = '3px solid limegreen'
+      document.getElementById('result-13').style.color = 'limegreen'
+      document.getElementById('result-13').innerHTML = 'Correct!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-14').checked) {
+      document.getElementById('block-14').style.border = '3px solid red'
+      document.getElementById('result-14').style.color = 'red'
+      document.getElementById('result-14').innerHTML = 'Incorrect!'
+      
+    }
+  }
+  
+  // the functon displays the link to the correct answer
+  function showCorrectAnswer1() {
+    let showAnswer1 = document.createElement('p')
+    showAnswer1.innerHTML = 'Show Corrent Answer'
+    showAnswer1.style.position = 'relative'
+    showAnswer1.style.top = '-180px'
+    showAnswer1.style.fontSize = '1rem'
+    document.getElementById('showanswer1').appendChild(showAnswer1)
+    showAnswer1.addEventListener('click', () => {
+      document.getElementById('block-13').style.border = '3px solid limegreen'
+      document.getElementById('result-13').style.color = 'limegreen'
+      document.getElementById('result-13').innerHTML = 'Correct!'
+      document.getElementById('showanswer1').removeChild(showAnswer1)
+    })
+  }
+  
+</script>
+</div>
+</body>
+
+<body>
+	<div style='transform: scale(0.65); position: relative; top: -200px;'>
+  <h3> Q2> In a C-E configuration, an emitter resistor is used for:</h3>
+  <p>Choose 1 answer</p>
+  <hr />
+
+  <div id='block-21' style='padding: 10px;'>
+    <label for='option-21' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='6/24' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      stabilization</label>
+    <span id='result-21'></span>
+  </div>
+  <hr />
+
+  <div id='block-22' style='padding: 10px;'>
+    <label for='option-22' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='6' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      ac signal bypass</label>
+    <span id='result-22'></span>
+  </div>
+  <hr />
+
+  <div id='block-23' style='padding: 10px;'>
+    <label for='option-23' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='1/3' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      collector bias</label>
+    <span id='result-23'></span>
+  </div>
+  <hr />
+
+  <div id='block-24' style='padding: 10px;'>
+    <label for='option-24' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='1/6' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      higher gain</label>
+    <span id='result-24'></span>
+  </div>
+  <hr /><br><br>
+  <a href="Post Test.html">
+  
+</div>
+<a id='showanswer2'></a>
+<script>
+  //    The function evaluates the answer and displays result
+  function displayAnswer2() {
+    if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid limegreen'
+      document.getElementById('result-21').style.color = 'limegreen'
+      document.getElementById('result-21').innerHTML = 'Correct!'
+      
+    }
+    if (document.getElementById('option-22').checked) {
+      document.getElementById('block-22').style.border = '3px solid red'
+      document.getElementById('result-22').style.color = 'red'
+      document.getElementById('result-22').innerHTML = 'Incorrect!'
+      showCorrectAnswer2()
+    }
+    if (document.getElementById('option-23').checked) {
+      document.getElementById('block-23').style.border = '3px solid red'
+      document.getElementById('result-23').style.color = 'red'
+      document.getElementById('result-23').innerHTML = 'Incorrect!'
+      showCorrectAnswer2()
+    }
+    if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid red'
+      document.getElementById('result-24').style.color = 'red'
+      document.getElementById('result-24').innerHTML = 'Incorrect!'
+      showCorrectAnswer2()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function showCorrectAnswer2() {
+    let showAnswer2 = document.createElement('p')
+    showAnswer2.innerHTML = 'Show Corrent Answer'
+    showAnswer2.style.position = 'relative'
+    showAnswer2.style.top = '-450px'
+    showAnswer2.style.fontSize = '1rem'
+    document.getElementById('showanswer2').appendChild(showAnswer2)
+    showAnswer2.addEventListener('click', () => {
+      document.getElementById('block-21').style.border = '3px solid limegreen'
+      document.getElementById('result-21').style.color = 'limegreen'
+      document.getElementById('result-21').innerHTML = 'Correct!'
+      document.getElementById('showanswer2').removeChild(showAnswer2)
+    })
+  }
+</script>
+
+</body>
+
+<body>
+	<div style='transform: scale(0.65); position: relative; top: -380px;'>
+  <h3> Q3> To operate properly, a transistor's base-emitter junction must be forward biased with reverse bias applied to which junction?</h3>
+  <p>Choose 1 answer</p>
+  <hr />
+
+  <div id='block-31' style='padding: 10px;'>
+    <label for='option-31' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='6/24' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      collector-emitter</label>
+    <span id='result-31'></span>
+  </div>
+  <hr />
+
+  <div id='block-32' style='padding: 10px;'>
+    <label for='option-32' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='6' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      base-collector</label>
+    <span id='result-32'></span>
+  </div>
+  <hr />
+
+  <div id='block-33' style='padding: 10px;'>
+    <label for='option-33' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='1/3' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      base-emitter</label>
+    <span id='result-33'></span>
+  </div>
+  <hr />
+
+  <div id='block-34' style='padding: 10px;'>
+    <label for='option-34' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option2' value='1/6' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+     collector-base</label>
+    <span id='result-34'></span>
+  </div>
+  <hr /><br><br>
+  <a href="Post Test.html">
+  	<button type='button' onclick=''  style='width: 150px; height: 50px; border-radius: 3px; background-color: lightblue; font-weight: 700;font-size: 145%; margin: 10px;'>Reset</button></a>
+  <button type='button' onclick='displayAnswer3();displayAnswer2(); displayAnswer1()'  style='width: 150px; height: 50px; border-radius: 3px; background-color: lightblue; font-weight: 700;font-size: 145%;margin: 10px;'>Submit</button>
+  
+</div>
+
+<a id='showanswer3'></a>
+<script>
+  //    The function evaluates the answer and displays result
+  function displayAnswer3() {
+    if (document.getElementById('option-31').checked) {
+      document.getElementById('block-31').style.border = '3px solid red'
+      document.getElementById('result-31').style.color = 'red'
+      document.getElementById('result-31').innerHTML = 'Incorrect!'
+      showCorrectAnswer3()
+    }
+    if (document.getElementById('option-32').checked) {
+      document.getElementById('block-32').style.border = '3px solid red'
+      document.getElementById('result-32').style.color = 'red'
+      document.getElementById('result-32').innerHTML = 'Incorrect!'
+      showCorrectAnswer3()
+    }
+    if (document.getElementById('option-33').checked) {
+      document.getElementById('block-33').style.border = '3px solid red'
+      document.getElementById('result-33').style.color = 'red'
+      document.getElementById('result-33').innerHTML = 'Incorrect!'
+      showCorrectAnswer3()
+    }
+    if (document.getElementById('option-34').checked) {
+      document.getElementById('block-34').style.border = '3px solid limegreen'
+      document.getElementById('result-34').style.color = 'limegreen'
+      document.getElementById('result-34').innerHTML = 'Correct!'
+      
+    }
+  }
+  // the functon displays the link to the correct answer
+  function showCorrectAnswer3() {
+    let showAnswer3 = document.createElement('p')
+    showAnswer3.innerHTML = 'Show Corrent Answer'
+    showAnswer3.style.position = 'relative'
+    showAnswer3.style.top = '-450px'
+    showAnswer3.style.fontSize = '1rem'
+    document.getElementById('showanswer3').appendChild(showAnswer3)
+    showAnswer3.addEventListener('click', () => {
+      document.getElementById('block-31').style.border = '3px solid limegreen'
+      document.getElementById('result-31').style.color = 'limegreen'
+      document.getElementById('result-31').innerHTML = 'Correct!'
+      document.getElementById('showanswer3').removeChild(showAnswer3)
+    })
+  }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+</head>
+<body bgcolor="#023E7D">
+<div style='transform: scale(0.65); position: relative; top: -100px;'>
+  <h3> Q2> How much is the base-to-emitter voltage of a transistor in the on state?</h3>
+  <p>Choose 1 answer</p>
+  <hr />
+
+  <div id='block-21' style='padding: 10px;'>
+    <label for='option-21' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option' value='6/24' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      0 V</label>
+    <span id='result-21'></span>
+  </div>
+  <hr />
+
+  <div id='block-22' style='padding: 10px;'>
+    <label for='option-22' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option' value='6' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      0.7 V</label>
+    <span id='result-22'></span>
+  </div>
+  <hr />
+
+  <div id='block-23' style='padding: 10px;'>
+    <label for='option-23' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option' value='1/3' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      0.7 mV</label>
+    <span id='result-23'></span>
+  </div>
+  <hr />
+
+  <div id='block-24' style='padding: 10px;'>
+    <label for='option-24' style=' padding: 5px; font-size: 1.5rem;'>
+      <input type='radio' name='option' value='1/6' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Undefined</label>
+    <span id='result-24'></span>
+  </div>
+  <hr />
+  <button type='button' onclick='displayAnswer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='showanswer2'></a>
+<script>
+  //    The function evaluates the answer and displays result
+  function displayAnswer2() {
+    if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid red'
+      document.getElementById('result-21').style.color = 'red'
+      document.getElementById('result-21').innerHTML = 'Incorrect!'
+    }
+    if (document.getElementById('option-22').checked) {
+      document.getElementById('block-22').style.border = '3px solid limegreen'
+      document.getElementById('result-22').style.color = 'limegreen'
+      document.getElementById('result-22').innerHTML = 'Correct!'
+      showCorrectAnswer2()
+    }
+    if (document.getElementById('option-23').checked) {
+      document.getElementById('block-23').style.border = '3px solid red'
+      document.getElementById('result-23').style.color = 'red'
+      document.getElementById('result-23').innerHTML = 'Incorrect!'
+      showCorrectAnswer2()
+    }
+    if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid red'
+      document.getElementById('result-24').style.color = 'red'
+      document.getElementById('result-24').innerHTML = 'Incorrect!'
+      showCorrectAnswer2()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function showCorrectAnswer2() {
+    let showAnswer2 = document.createElement('p')
+    showAnswer2.innerHTML = 'Show Corrent Answer'
+    showAnswer2.style.position = 'relative'
+    showAnswer2.style.top = '-180px'
+    showAnswer2.style.fontSize = '1.5rem'
+    document.getElementById('showanswer2').appendChild(showAnswer2)
+    showAnswer2.addEventListener('click', () => {
+      document.getElementById('block-22').style.border = '3px solid limegreen'
+      document.getElementById('result-22').style.color = 'limegreen'
+      document.getElementById('result-22').innerHTML = 'Correct!'
+      document.getElementById('showanswer2').removeChild(showAnswer2)
+    })
+  }
+</script>
+
+</body>

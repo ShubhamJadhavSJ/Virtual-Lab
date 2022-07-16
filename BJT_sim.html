@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>V-Labs Refrences</title>
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+
+</head>
+
+ <style>
+         table, th, td {
+            border: 2px solid #023E7D;
+
+         }
+ </style>
+ 
+<body bgcolor="#023E7D">
+<div>
+	<div id="nav-placeholder" style="background-color:#e6f5ff;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+		<img src="Vlab.png"> <br>
+		<div style="font-size:20px; text-align:center;padding-top: 5px">
+		<b>BJT characteristics</b></div>
+		<div style="font-size:14px; background-color:lightblue; width: 100%; height:18px;">
+	    <a style="text-decoration: none;color: #095586;" href='Home.html'>&nbsp; Home </a>
+	    <a style="text-decoration: none; color: #095586;" href='Experiment-List.html'>&nbsp; > Experiments </a>
+	    <a style="text-decoration: none; color:#095586;" href='Broad Goal.html'>&nbsp; > BJT characteristics</a>
+	    <a style="text-decoration: none; color:#095586;" href='Simulator.html'>&nbsp; > Simulator </a>
+      <a style="text-decoration: none;" href='#'>&nbsp; > BJT- CE INPUT CHARACTERISTICS </a></div>
+      <ul>
+      <li ><a  href="Broad Goal.html">Broad Goal</a></li>
+    <li ><a  href="LO.html">Learning Objectives</a></li>
+    <li><a href="Theory.html">Theory</a></li>
+    <li><a href="Pre Test.html">Pre Test</a></li>
+    <li><a href="Procedure.html">Procedure</a></li>
+    <li><a href="Simulator">Simulator</a> </li>
+    <li><a href="Post Test.html">Post Test</a></li>
+    <li><a href="References.html">References</a></li>
+  </ul>
+
+  	<div id="whole_body" style=" background-color:#e6f5ff;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom: 20px">
+	  	<div style="font-size:25px; text-align:center;padding-top: 5px">
+    		 <b>BJT- CE INPUT CHARACTERISTICS</b>
+    	</div>
+
+    	<script type="text/javascript">
+		// Popup window code
+		function newPopup(url) {
+			popupWindow = window.open(
+				url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+		}
+		</script>
+
+		<button style=" background-color: lightblue; margin-left: 15px; "><a style="text-decoration:none; color: black; font-size: 15px;" href="JavaScript:newPopup('Inp_Procedure_PopUp.html');">Procedure</a></button><br><br><br>
+
+    	<table style="margin-right: auto; width:28%; margin-left: 10px;">
+         <tr>
+            <th>Sr.no</th>
+            <th>Base-Emitter Voltage</th>
+            <th>Base Current</th>
+         </tr>
+         <tr>
+            <td>....</td>
+            <td>....</td>
+         </tr>
+         <tr>
+            <td>....</td>
+            <td>....</td>
+         </tr>
+         
+      </table>
+
+
+    <div class="rangeslider1" style="font-size: 16px; border: 3px solid lightblue;width: 32%; background-color:lightblue; margin-left:31%; margin-top: -110px; margin-right:30px;">
+	  	<label for="points">Resistance Rh1:</label>
+		<input type="range" id="R1" name="points" min="0" max="100" onclick="r1Change()"><p style="display:inline-block;"><span id="Res1" style="border: 3px solid lightblue;"></span> ohms</p>
+    
+	</div>
+	 <div class="rangeslider2" style="font-size: 16px; border: 3px solid lightblue;width: 32%; background-color:lightblue; margin-left:65%;margin-top: -57px; margin-right:15px; ">
+	  	<label for="points">Resistance Rh2:</label>
+		<input type="range" id="R2" name="points" min="0" max="100" onclick ="r2Change()"><p style="display: inline-block;"><span id="Res2" style="border: 3px solid lightblue;"></span>Ohm</p>
+	</div>
+
+<div class="gfg" >
+	<p><img style="margin-right: 9px; margin-top: 40px" src="Fig1.png"></p>
+  <input type="text" name="resis1" id="Rh1"  value=""  readonly style="position:absolute;font-weight: bold; top:410px;right:545px;width:55px; background-color: lightblue;">
+  <input type="text" name="resis2" id="Rh2"  value="" readonly style="position:absolute;font-weight: bold;top:410px;right:100px;width:55px; background-color: lightblue;">
+  <input type="text" name="VBE" id="VBE"  value="" readonly style="position:absolute;font-weight: bold;top:468px;right:417px;width:60px; background-color: lightblue;">
+  <input type="text" name="IB" id="IB"  value="" readonly style="position:absolute;font-weight: bold;top:336px;right:412px;width:60px; background-color: lightblue;"> 
+
+  <div class='button' >
+	 <button style=" background-color: lightblue; margin-left: 50%; width: 90px; height: 40px;">Add to Table</button>
+  </div>
+  <div style="margin-top: -39px;  margin-right:40px;">
+    <button style=" background-color: lightblue; right: 40px; width: 90px; height: 40px;">Plot</button>  
+  </div>
+</div> 
+
+
+	   </div>
+</body>
+<script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "BJT characteristics"
+      },
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { x:  0.46, y:0.09},
+        { x: 0.50, y: 0.50},
+        { x: 0.52, y: 0.97 },
+        { x:0.53, y: 1.21 },
+        { x: 0.55, y: 2.44}
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 70%; margin-left: auto; margin-right:auto;">
+  </div>
+</body>
+
+
+<script>
+function r1Change() {
+    c1 = parseFloat(document.getElementById("R1").value);
+    document.getElementById("Rh1").value = c1;
+
+}
+var rangeslider1 = document.getElementById("R1");
+var output1 = document.getElementById("Res1");
+output1.innerHTML = rangeslider1.value;
+  
+rangeslider1.oninput = function() {
+  output1.innerHTML = this.value;
+
+}
+
+function r2Change() {
+    c2 = parseFloat(document.getElementById("R2").value);
+    document.getElementById("Rh2").value = c2;
+
+}
+var rangeslider2 = document.getElementById("R2");
+var output2 = document.getElementById("Res2");
+output2.innerHTML = rangeslider2.value;
+  
+rangeslider2.oninput = function() {
+  output2.innerHTML = this.value;
+
+}
+</script>
+</html>
